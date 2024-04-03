@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 import yaml
-from client import app
+#from client import app
 import os
 import swibots
 from loader import load_modules
