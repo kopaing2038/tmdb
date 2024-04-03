@@ -18,7 +18,7 @@ def is_enabled(value, default):
 API_ID = int(environ.get("API_ID", "7880210"))
 API_HASH = environ.get("API_HASH", "1bb4b2ff1489cc06af37cba448c8cce9")
 BOT_TOKEN = environ.get("BOT_TOKEN", "5639690332:AAHujt9HsdbI9ciD9TgUdVAltXVDCSgx4Hs")
-
+SESSION = environ.get('SESSION', 'Media_search')
 # Bot settings
 USE_DESCRIPTION_FILTER = bool(environ.get("USE_DESCRIPTION_FILTER", True))
 PICS = (
