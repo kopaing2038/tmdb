@@ -29,17 +29,17 @@ PICS = (
 TMDB_KEY = environ.get("TMDB_KEY")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) for admin in environ.get("ADMINS", "").split()]
+ADMINS = [int(admin) for admin in environ.get("ADMINS", "1113630298").split()]
 CHATS = [str(ch) for ch in environ.get("CHATS", "0").split()]
 COMMUNITIES = [str(ch) for ch in environ.get("COMMUNITIES", "0").split()]
 
 
-DATABASE_URI = environ.get("DATABASE_URI", "")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://hansaka:anuhas@cluster0.bb5a2un.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get("DATABASE_NAME", "switch_movie_bot")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "switch_files")
 
 # Others
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", 0))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", -1001254905376))
 SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "")
 P_TTI_SHOW_OFF = is_enabled((environ.get("P_TTI_SHOW_OFF", "True")), True)
 IMDB = is_enabled((environ.get("IMDB", "True")), True)
